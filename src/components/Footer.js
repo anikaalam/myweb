@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
+import { SocialIcon } from 'react-social-icons';
 
 
 function Footer(){
@@ -11,9 +12,10 @@ function Footer(){
                 <Row className="border-top justify-content-between p-3">
                     <Col className="p-0" md={3} sm={12}>
                         Fahmida Alam Anika
+
                     </Col>
-                    <Col className="p-0 d-flex justify-content-end" md={3} >
-                        This site was made by Anika.
+                    <Col className=" p-0 d-flex justify-content-end" md={3} >
+                        This site was made by Anika using ReactJS.
                     </Col>
                 </Row>
             </Container>

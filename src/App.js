@@ -36,7 +36,7 @@ class App extends React.Component{
       //top level info for the 3 main pages 
       home:{
         title: "Hi, I'm Anika",
-        subTitle: "I'm a developer",
+        subTitle: "I'm a  ",
         text: "Take a look around to see what I've been upto",
       },
 
@@ -59,7 +59,7 @@ class App extends React.Component{
       //7. Create a toggle and collapsing section, makes more responsive
       <Router>
         <Container className ="p-5" fuild={true} >
-          <Navbar className="border-bottom" bg="transparent" variant="light" expand="lg">
+          <Navbar bg="transparent" variant="light" expand="lg">
             <Navbar.Brand>Fahmida Alam Anika</Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle"/>
             <Navbar.Collapse id ="navbar-toggle">

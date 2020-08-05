@@ -8,34 +8,28 @@ import { SocialIcon } from 'react-social-icons';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import profilepic from '../assets/profilepic.jpg';
+import Image from 'react-image-resizer';
 
 //using our Hero component we made 
 
 //pass in the props here for the hero, whatever we pass in the title will sho up on hero title 
-
+//<img src={profilepic} className="pic-logo" alt="logo" 
+  //          height={350}
+    //        width={700} />
 function HomePage(props){
     return(
         <div>
+            <div>
+                <img src={profilepic} className="pic-logo pic-center" alt="logo" />
+            </div>
             <Hero title={props.title} subTitle={props.subTitle} text={props.text}  />
+
             <Carousel/> 
-            <AboutPage/>
+            
             <ContactPage/>
             
 
-        <div></div>
-        <Container fluid={true}>
-            <Row className="p-5 justify-content-center">
-                <SocialIcon url="http://twitter.com/famida4" />
-                <SocialIcon url="https://www.instagram.com/famidaanika" />
-                <SocialIcon url="https://www.facebook.com/famida4" />
-                <SocialIcon url="anika.contactme@gmail.com" />
-
-                
-                
-
-            </Row>
-
-        </Container>
 
         
             

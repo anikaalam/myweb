@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import Content from '../components/Content';
 import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/esm/Row';
+import { SocialIcon } from 'react-social-icons';
 
 
 function ContactPage(props){
@@ -19,6 +20,16 @@ function ContactPage(props){
                 
 
                 </Container>
+
+                <Container fluid={true}>
+                    <Row className="anika-social p-4 justify-content-center">
+                        <SocialIcon url="http://twitter.com/famida4" />
+                        <SocialIcon url="https://www.instagram.com/famidaanika" />
+                        <SocialIcon url="https://www.facebook.com/famida4" />
+                        <SocialIcon url="anika.contactme@gmail.com" />
+                    </Row>
+
+        </Container>
                 
                 
                 
