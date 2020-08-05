@@ -8,11 +8,11 @@ import {BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import Typical from 'react-typical';
 
 //1.convert the App.js component into class base component to use State 
 class App extends React.Component{
@@ -35,8 +35,8 @@ class App extends React.Component{
 
       //top level info for the 3 main pages 
       home:{
-        title: "Hello World :)",
-        subTitle: "Welcome to my website",
+        title: "Hi, I'm Anika",
+        subTitle: "I'm a developer",
         text: "Take a look around to see what I've been upto",
       },
 
@@ -59,14 +59,16 @@ class App extends React.Component{
       //7. Create a toggle and collapsing section, makes more responsive
       <Router>
         <Container className ="p-5" fuild={true} >
-          <Navbar className="border-bottom" bg="transparent" expand="lg">
+          <Navbar className="border-bottom" bg="transparent" variant="light" expand="lg">
             <Navbar.Brand>Fahmida Alam Anika</Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle"/>
             <Navbar.Collapse id ="navbar-toggle">
               <Nav className="ml-auto">
-                <Link className="nav=link" to="/" >Home</Link>
-                <Link className="nav=link" to="/about" >About</Link>
-                <Link className="nav=link" to="/contact" >Contact</Link>
+                <Link className="nav-link" to="/" >Home<p>   </p></Link>
+               
+                <Link className="nav-link" to="/about" >About</Link>
+
+                <Link className="nav-link" to="/contact" >Contact</Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
